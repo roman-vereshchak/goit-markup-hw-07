@@ -3,13 +3,19 @@
   --title-text-color: #757575;
   --accent-color: #2196f3;
   --text-white: #ffffff;
+  --text-black: #000000;
+  --business-color: #2f303a;
+  --hover-color: #188ce8;
+  --footer-link-text: #ffffff99;
 }
 
 body {
   background-color: var(--text-white);
   color: var(--primari-text-color);
   font-family: Roboto, sans-serif;
-  text-decoration: none;
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
 }
 
 ul {
@@ -17,7 +23,7 @@ ul {
 }
 
 .logo {
-  color: #000000;
+  color: var(--text-black);
   font-family: Raleway, sans-serif;
   font-size: 26px;
   line-height: calc(31 / 26);
@@ -26,7 +32,7 @@ ul {
 }
 
 .logo .logo-blue {
-  color: #2196f3;
+  color: var(--accent-color);
 }
 
 .list {
@@ -66,7 +72,7 @@ ul {
 }
 
 .business {
-  background-color: #2f303a;
+  background-color: var(--business-color);
 }
 
 .hero-title {
@@ -102,9 +108,6 @@ ul {
 
 .features-list .title-text {
   color: var(--title-text-color);
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
 }
 
 .our-work-title {
@@ -147,16 +150,13 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  background-color: #2196f3;
+  background-color: var(--hover-color);
 }
 
 .footer .text {
@@ -174,10 +174,7 @@ ul {
 
 .footer .link {
   font-style: normal;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--footer-link-text);
   text-decoration: none;
 }
 
@@ -187,7 +184,7 @@ ul {
 }
 
 .footer .logo {
-  color: #ffffff;
+  color: var(--text-white);
 }
 
 .filter .btn {

@@ -11,28 +11,37 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="page-header">
+     <div class="container container-top-line">
       <a href="./index.html" lang="en" class="logo"><span class="logo-blue">Web</span>Studio</a>
       <nav>
         <ul class="menu-nav list">
-          <li><a href="./index.html" class="link">Студія</a></li>
-          <li><a href="./portfolio.html" class="link current">Портфоліо</a></li>
-          <li><a href="./contact.html" class="link">Контакти</a></li>
+          <li class="menu-nav-item"><a href="./index.html" class="link">Студія</a></li>
+          <li class="menu-nav-item"><a href="./portfolio.html" class="link current">Портфоліо</a></li>
+          <li class="menu-nav-item"><a href="./contact.html" class="link">Контакти</a></li>
         </ul>
       </nav>
 
       <ul class="contact list">
-        <li>
+        <li class="contact-item">
           <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
         </li>
-        <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+        <li class="contact-item">
+          <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
+        </li>
       </ul>
+     </div>
     </header>
-    <main>
-      <section>
+    <main >
+      <section class="our-projects">
+        <div class="container">
         <h1 class="peculiarities-title">Усі роботи</h1>
         <ul class="filter list">
           <li><button type="button" class="btn">Усі</button></li>
@@ -41,70 +50,109 @@
           <li><button type="button" class="btn">Дизайн</button></li>
           <li><button type="button" class="btn">Маркетинг</button></li>
         </ul>
-        <!--всі роботи треба буде обернути в тег <а>-->
+    </div>
+    <div class="container">
         <ul class="projects list">
-          <li>
+         <li class="project-item"> 
+          <a href="" class="link">
             <img src="./images/img-8.jpg" alt="приклад веб-сайу Технокряк" width="370" />
+            <div class="project-item-description">
             <h2 class="title">Технокряк</h2>
             <p class="title-text">Веб-сайт</p>
-          </li>
-          <li>
+            </div>
+          </a>
+         </li>
+         <li class="project-item">
+          <a href="" class="link">
             <img
               src="./images/img-9.jpg"
               alt="приклад дизайну постера New Orlean vs Golden Star"
               width="370"
             />
+            <div class="project-item-description">
             <h2 class="title">Постер <span lang="en">New Orlean vs Golden Star</span></h2>
             <p class="title-text">Дизайн</p>
+            </div>
+          </a>
           </li>
-          <li>
+          <li class="project-item">
+           <a href="" class="link">
             <img src="./images/img-10.jpg" alt="приклад додатку ресторана Seafood" width="370" />
+            <div class="project-item-description">
             <h2 class="title">Ресторан <span lang="en">Seafood</span></h2>
             <p class="title-text">Додаток</p>
+            </div>
+           </a>
           </li>
-          <li>
+          <li class="project-item">
+           <a href="" class="link">
             <img src="./images/img-11.jpg" alt="приклад проекту Prime" width="370" />
+            <div class="project-item-description">
             <h2 class="title">Проєкт <span lang="en">Prime</span></h2>
             <p class="title-text">Маркетинг</p>
+            </div>
+           </a>
           </li>
-          <li>
+          <li class="project-item">
+            <a href="" class="link">
             <img src="./images/img-12.jpg" alt="приклад проекту додатку Boxes" width="370" />
+            <div class="project-item-description">
             <h2 class="title">Проєкт <span lang="en">Boxes</span></h2>
             <p class="title-text">Додаток</p>
+            </div>
+            </a>
           </li>
-          <li>
+          <li class="project-item">
+           <a href="" class="link">
             <img
               src="./images/img-13.jpg"
               alt="приклад веб-сайу Inspiration has no Borders"
               width="370"
             />
+            <div class="project-item-description">
             <h2 class="title" lang="en">Inspiration has no Borders</h2>
             <p class="title-text">Веб-сайт</p>
+            </div>
+           </a>
           </li>
-          <li>
+          <li class="project-item">
+            <a href="" class="link">
             <img
               src="./images/img-14.jpg"
               alt="приклад дизайну видання Limited Edition"
               width="370"
             />
+           <div class="project-item-description">
             <h2 class="title">Видання <span lang="en">Limited Edition</span></h2>
             <p class="title-text">Дизайн</p>
+           </div>
+           </a>
           </li>
-          <li>
+          <li class="project-item">
+            <a href="" class="link">
             <img src="./images/img-15.jpg" alt="приклад проекту LAB" width="370" />
+            <div class="project-item-description">
             <h2 class="title">Проєкт <span lang="en">LAB</span></h2>
             <p class="title-text">Маркетинг</p>
+            </div>
+            </a>
           </li>
-          <li>
+          <li class="project-item">
+            <a href="" class="link">
             <img src="./images/img-16.jpg" alt="приклад додатку Growing Business" width="370" />
+            <div class="project-item-description">
             <h2 class="title" lang="en">Growing Business</h2>
             <p class="title-text">Додаток</p>
+            </div>
+            </a>
           </li>
         </ul>
+      </div>
       </section>
     </main>
     <footer class="footer business">
       <!--footer(нижній колонтитул)-->
+      <div class="container">
       <a href="./index.html" lang="en" class="logo"><span class="logo-blue">Web</span>Studio</a>
       <address>
         <ul>
@@ -121,6 +169,7 @@
           <li><a href="tel:+380961111111" class="link">+380961111111</a></li>
         </ul>
       </address>
+      </div>
     </footer>
   </body>
 </html>

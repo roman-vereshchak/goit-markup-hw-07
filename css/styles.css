@@ -8,6 +8,8 @@
   --hover-color: #188ce8;
   --footer-link-text: #ffffff99;
   --background-color-our-teams: #F5F4FA;
+  --page-header-color: #ececec;
+  --project-item-color: #eeeeee;
 }
 
 body {
@@ -45,7 +47,8 @@ img {
 }
 
 .page-header {
-  border: 1px solid #ececec;
+  background-color: var(--text-white);
+  border-bottom: 1px solid var(--page-header-color);
 }
 
 
@@ -59,6 +62,11 @@ img {
 .container-top-line {
   display: flex;
   align-items: center;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center; 
 }
 
 .menu-nav {
@@ -161,9 +169,7 @@ img {
 
 .features-list {
   display: flex;
-  align-items: flex-start;
   flex-basis: calc((100% - 90px) / 4);
-  margin-right: 30px;
 }
 
 .features-list-item {
@@ -225,6 +231,9 @@ img {
 
 .our-teams {
   background-color: var(--background-color-our-teams);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 }
 
 .our-teams-title {
@@ -340,19 +349,23 @@ img {
 }
 
 .footer .logo {
-  margin-bottom: 20px;
+  margin-bottom: 28px;
   color: var(--text-white);
 }
 
 .our-projects {
+  padding-top: 94px;
   padding-bottom: 94px;
+}
+
+.footer-item:not(:last-child) {
+margin-bottom: 12px;
 }
 
 .filter {
   display: flex;
   justify-content: center;
-  padding-top: 94px;
-  margin-bottom: 34px;
+  margin-bottom: 50px;
 }
 
 .filter :not(:last-child) {
@@ -378,6 +391,7 @@ img {
 .filter .btn:active {
   color: var(--text-white);
   background-color: var(--accent-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .projects .title {
@@ -429,10 +443,10 @@ img {
 .project-item-description {
   padding: 20px 24px;
 
-  background: #ffffff;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
+  background: var(--text-white);
+  border-bottom: 1px solid var(--project-item-color);
+  border-left: 1px solid var(--project-item-color);
+  border-right: 1px solid var(--project-item-color);
 }
 
 .project-item .title-text {
@@ -445,11 +459,9 @@ img {
 }
 /*HW3 start*/
 .container {
-  margin-left: auto;
-  margin-right: auto;
   width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0px 15px;
+  margin: 0 auto;
 }
 .footer {
   padding-bottom: 60px;

@@ -212,7 +212,7 @@ img {
   height: 120px;
   align-items: center;
   justify-content: center;
-  background: #f5f4fa;
+  background: var(--background-color-our-teams);
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -290,12 +290,15 @@ img {
 
 .team-icon-list {
   display: flex;
-  width: 206px;
-  height: 44px;
+  justify-content: center;
 }
 
 .team-list-icon {
   margin-right: 10px;
+}
+
+.team-list-icon:last-child {
+  margin: 0;
 }
 
 .team-icon-link {
@@ -315,7 +318,6 @@ img {
 .teams-item-description {
   padding-top: 30px;
   padding-bottom: 30px;
-  margin-left: 32px;
 }
 
 .team-icon-svg {
@@ -331,7 +333,7 @@ img {
 .teams-item {
   width: 270px;
   height: 428px;
-  background-color: var(--white-text);
+  background-color: var(--text-white);
   box-shadow: 0px 1px 3px rgb(0 0 0 / 12%), 0px 1px 1px rgb(0 0 0 / 14%),
     0px 2px 1px rgb(0 0 0 / 20%);
   border-radius: 0px 0px 4px 4px;
@@ -492,8 +494,8 @@ img {
   margin-right: 30px;
 }
 
-.projects > .project-item:hover,
-.projects > .project-item:focus {
+.projects .link:hover,
+.projects .link:focus {
   box-shadow: 0 1px 1px rgb(0 0 0 / 12%), 0 4px 4px rgb(0 0 0 / 6%), 1px 4px 6px rgb(0 0 0 / 16%);
 }
 
@@ -562,10 +564,15 @@ img {
 }
 .customers-list {
   display: flex;
+  justify-content: center;
 }
 
 .item-icon {
   margin-right: 30px;
+}
+
+.item-icon:last-child {
+  margin: 0;
 }
 
 .link-group {
@@ -591,20 +598,16 @@ img {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-icon {
-  display: block;
-  width: 206px;
-  height: 80px;
-  margin-top: 12px;
   margin-left: 70px;
 }
 
 .footer-title {
   margin-bottom: 20px;
   margin-top: 0;
-  font-style: normal;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -618,6 +621,10 @@ img {
 
 .list-icon {
   margin-right: 10px;
+}
+
+.list-icon:last-child {
+  margin: 0;
 }
 
 .icon-link {

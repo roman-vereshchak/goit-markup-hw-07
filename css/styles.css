@@ -500,6 +500,7 @@ img {
 }
 
 .project-item .link {
+  display: block;
   text-decoration: none;
 }
 
@@ -607,6 +608,7 @@ img {
 
 .footer-title {
   margin-bottom: 20px;
+  font-weight: 700;
   margin-top: 0;
   font-size: 14px;
   line-height: 1.14;
